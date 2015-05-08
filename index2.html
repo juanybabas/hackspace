@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HackSpace es el mejor entorno para Developers y Makers de LATAM originado en la filosofía del hacer">
+    <meta charset="UTF-8">
+    <title>HackSpace - Aprende, Imagina, Crea y Desarrolla</title>
+    <meta name="author" content="Dev's Hackspace">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.min.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-set-edition/css/pe-icon-set-edition.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-set-edition/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <svg style="display:none">
+      <defs>
+        <g id="svg-arrow">
+          <path fill="white" d="M91.3,9.2c0-0.5-0.3-0.8-0.8-1.1c-1.1-0.6-3.1-0.5-4.4,0.3c-0.2,0.1-0.4,0.3-0.6,0.5c-0.1,0.1-0.1,0.5-0.1,0.7 c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2,0.1,0.3l0.1,0.1l0,0.2c0.1,8.2-3.4,17.4-9.4,24.5c-2.6,3.1-6.8,7.4-12.2,10.4 c-2.9,1.7-5.9,2.8-8.7,3.3c-3.2,0.6-6.2,0.4-9.3-0.5c-3.2-0.9-6.3-2.4-9.5-4.6c-7.5-5.1-12.3-12.7-15.3-18 c-3.3-5.9-5.9-11.4-7.8-16.6c0.7,0.7,1.4,1.3,2.1,2c0.9,0.8,1.7,1.7,2.6,2.5c2.4,2.2,5.1,4.1,7.8,6c1.8,1.3,3.7,2.6,5.5,4 c0.8,0.6,2.8,0.5,4.3-0.3c0.6-0.3,1-0.7,1-1.1c0-0.3-0.2-0.6-0.5-0.7c-1.7-1.4-3.5-2.6-5.3-3.9c-2.5-1.8-5.2-3.6-7.5-5.7  c-1.1-1-2.3-2.1-3.4-3.2c-2.9-2.7-5.9-5.6-9.1-7.9C10-0.1,7.7-0.2,6.4,0.5C5.9,0.8,5.6,1.2,5.6,1.6C5.3,4.3,5,7,4.7,9.6 c-1,9.3-2.1,18.9-4.6,28.2c-0.1,0.5,0.1,0.7,0.2,0.9c0.9,0.7,3.1,0.6,4.4-0.2c0.4-0.2,0.8-0.6,1-1c2.1-7.6,3.1-15.5,4-23.3  c2.8,6.6,6.2,12.9,10.2,18.6c4.7,6.6,10.4,11.7,16.7,14.9c7,3.5,14.7,4.6,22.4,3c3-0.6,6.1-1.8,9.2-3.6c4.2-2.4,8.4-5.9,12.3-10.1 C87.8,29,91.9,18.3,91.3,9.2z"></path>
+        </g>
+        <g id="slider-arrow">
+          <path fill="white" d="M59,0H22H1H0v1v58v1h1h21h37c0.6,0,1-0.4,1-1V1C60,0.4,59.6,0,59,0z M35.9,38.1L33,40.9L22.1,30L33,19.1l2.8,2.8L27.8,30L35.9,38.1z">  </path>
+        </g>
+        <g id="logo-svg">
+          <path fill="#EFD644" d="M16.7,28.5c-0.5,0.3-1.3,0.3-1.8,0l-7.7-4.5c-0.5-0.3-0.9-1-0.9-1.6v-9c0-0.6,0.4-1.3,0.9-1.6l7.7-4.5c0.5-0.3,1.3-0.3,1.8,0l7.7,4.5c0.5,0.3,1.3,0.3,1.8,0l4.4-2.6c0.5-0.3,0.5-0.8,0-1l-14-8.1c-0.5-0.3-1.3-0.3-1.8,0l-14,8.1C0.4,8.6,0,9.3,0,9.9v16.2c0,0.6,0.4,1.3,0.9,1.6l14,8.1c0.5,0.3,1.3,0.3,1.8,0l14-8.1c0.5-0.3,0.5-0.8,0-1l-4.4-2.6c-0.5-0.3-1.3-0.3-1.8,0L16.7,28.5z"></path>
+          <path fill="#EFD644" d="M11.8,14.6c-0.5,0.3-0.9,1-0.9,1.6v3.6c0,0.6,0.4,1.3,0.9,1.6l3.1,1.8c0.5,0.3,1.3,0.3,1.8,0l3.1-1.8c0.5-0.3,0.9-1,0.9-1.6v-3.6c0-0.6-0.4-1.3-0.9-1.6l-3.1-1.8c-0.5-0.3-1.3-0.3-1.8,0L11.8,14.6z"></path>
+          <path fill="#EFD644" d="M31.3,13.1c0-0.6,0.4-0.8,0.9-0.5l8.4,4.9c0.5,0.3,0.5,0.8,0,1l-8.4,4.9c-0.5,0.3-0.9,0.1-0.9-0.5V13.1z"></path>
+        </g>
+      </defs>
+    </svg>
+    <div id="loading">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 36" class="loader">
+        <use xlink:href="#logo-svg"></use>
+      </svg>
+    </div>
+    <section data-bg-src="assets/img/obj-bg.png" class="section section-dark section-background pt-45 pb-60 parallax">
+      <div class="container">
+        <div class="row pt5 pb5">
+          <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 text-center">
+          <a href="#main-slider" class="main-logo">
+          <img src="assets/img/logo.png" srcset="assets/img/logo2x.png 2x" alt="HackSpace Logo">
+          </a>
+            <div class="mt3 mb3">
+              <a href="hackspace.html" class="btn btn-sm btn-block btn-white">HackSpace</a>
+              <a href="http://hackspace.la" class="btn btn-sm btn-block btn-yellow">Core Upgrade</a>
+            </div>
+            <div class="mt3 mb3">
+              <a href="http://hackspace.pe/open" class="btn btn-sm btn-block btn-info">Open Hack</a>
+              <a href="https://facebook.com/groups/hackspaceperu" class="btn btn-sm btn-block btn-success">Hack Nighter</a>
+              <a href="https://youtube.com/hackspaceperu" class="btn btn-sm btn-block btn-amaranth">HackSpace TV</a>
+            </div>
+            <a href="https://facebook.com/hackspaceperu" class="hex hex-xs">
+  <div class="hex-content">
+    <i class="pe-so-facebook"></i>
+  </div>
+</a> 
+<a href="https://twitter.com/hackspaceperu" class="hex hex-xs">
+  <div class="hex-content">
+    <i class="pe-so-twitter"></i>
+  </div>
+</a> 
+<a href="https://www.google.com.pe/?gws_rd=ssl#q=hack+space+peru" class="hex hex-xs">
+  <div class="hex-content">
+    <i class="pe-is-e-target-2"></i>
+  </div>
+</a> 
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init();
+      
+    </script>
+    
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        // Init Background
+        addBg('.section-background'); 
+      
+      }) // Ready
+      
+          
+    </script>
+  </body>
+</html>
