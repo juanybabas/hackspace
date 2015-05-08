@@ -1,0 +1,12 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "node": true,
+  "asi": true,
+  "globals": {
+      "angular": true,
+      "jQuery": true,
+      "$": true
+  }
+}
