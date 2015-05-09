@@ -13,6 +13,9 @@ app.get('/', function(req, res){
 app.get('/chiclayo', function(req, res){
     res.render('chiclayo')
 })
+app.get('/entrenamiento', function(req, res){
+    res.render('entrenamiento')
+})
 
 var port = process.env.PORT || 2000
 var server = app.listen(port, function(){
