@@ -10,9 +10,9 @@ app.set('views', __dirname + '/app/views');
 app.get('/', function(req, res){
     res.render('index');
 });
-app.get('/index2', function(req, res){
-    res.render('index2')
-})
+app.get('/chiclayo', function(req, res){
+    res.render('chiclayo');
+});
 
 var port = process.env.PORT || 2000
 var server = app.listen(port, function(){
