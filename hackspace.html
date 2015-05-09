@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HackSpace es el mejor entorno para Developers y Makers de LATAM originado en la filosofía del hacer">
+    <meta charset="UTF-8">
+    <title>HackSpace - Aprende, Imagina, Crea y Desarrolla</title>
+    <meta name="author" content="Dev's Hackspace">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/libs/prism/prism.css">
+    <link rel="stylesheet" href="assets/css/pe-slider.min.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-set-edition/css/pe-icon-set-edition.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-set-edition/css/helper.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <svg style="display:none">
+      <defs>
+        <g id="svg-arrow">
+          <path fill="white" d="M91.3,9.2c0-0.5-0.3-0.8-0.8-1.1c-1.1-0.6-3.1-0.5-4.4,0.3c-0.2,0.1-0.4,0.3-0.6,0.5c-0.1,0.1-0.1,0.5-0.1,0.7 c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2,0.1,0.3l0.1,0.1l0,0.2c0.1,8.2-3.4,17.4-9.4,24.5c-2.6,3.1-6.8,7.4-12.2,10.4 c-2.9,1.7-5.9,2.8-8.7,3.3c-3.2,0.6-6.2,0.4-9.3-0.5c-3.2-0.9-6.3-2.4-9.5-4.6c-7.5-5.1-12.3-12.7-15.3-18 c-3.3-5.9-5.9-11.4-7.8-16.6c0.7,0.7,1.4,1.3,2.1,2c0.9,0.8,1.7,1.7,2.6,2.5c2.4,2.2,5.1,4.1,7.8,6c1.8,1.3,3.7,2.6,5.5,4 c0.8,0.6,2.8,0.5,4.3-0.3c0.6-0.3,1-0.7,1-1.1c0-0.3-0.2-0.6-0.5-0.7c-1.7-1.4-3.5-2.6-5.3-3.9c-2.5-1.8-5.2-3.6-7.5-5.7  c-1.1-1-2.3-2.1-3.4-3.2c-2.9-2.7-5.9-5.6-9.1-7.9C10-0.1,7.7-0.2,6.4,0.5C5.9,0.8,5.6,1.2,5.6,1.6C5.3,4.3,5,7,4.7,9.6 c-1,9.3-2.1,18.9-4.6,28.2c-0.1,0.5,0.1,0.7,0.2,0.9c0.9,0.7,3.1,0.6,4.4-0.2c0.4-0.2,0.8-0.6,1-1c2.1-7.6,3.1-15.5,4-23.3  c2.8,6.6,6.2,12.9,10.2,18.6c4.7,6.6,10.4,11.7,16.7,14.9c7,3.5,14.7,4.6,22.4,3c3-0.6,6.1-1.8,9.2-3.6c4.2-2.4,8.4-5.9,12.3-10.1 C87.8,29,91.9,18.3,91.3,9.2z"></path>
+        </g>
+        <g id="slider-arrow">
+          <path fill="white" d="M59,0H22H1H0v1v58v1h1h21h37c0.6,0,1-0.4,1-1V1C60,0.4,59.6,0,59,0z M35.9,38.1L33,40.9L22.1,30L33,19.1l2.8,2.8L27.8,30L35.9,38.1z">  </path>
+        </g>
+        <g id="logo-svg">
+          <path fill="#EFD644" d="M16.7,28.5c-0.5,0.3-1.3,0.3-1.8,0l-7.7-4.5c-0.5-0.3-0.9-1-0.9-1.6v-9c0-0.6,0.4-1.3,0.9-1.6l7.7-4.5c0.5-0.3,1.3-0.3,1.8,0l7.7,4.5c0.5,0.3,1.3,0.3,1.8,0l4.4-2.6c0.5-0.3,0.5-0.8,0-1l-14-8.1c-0.5-0.3-1.3-0.3-1.8,0l-14,8.1C0.4,8.6,0,9.3,0,9.9v16.2c0,0.6,0.4,1.3,0.9,1.6l14,8.1c0.5,0.3,1.3,0.3,1.8,0l14-8.1c0.5-0.3,0.5-0.8,0-1l-4.4-2.6c-0.5-0.3-1.3-0.3-1.8,0L16.7,28.5z"></path>
+          <path fill="#EFD644" d="M11.8,14.6c-0.5,0.3-0.9,1-0.9,1.6v3.6c0,0.6,0.4,1.3,0.9,1.6l3.1,1.8c0.5,0.3,1.3,0.3,1.8,0l3.1-1.8c0.5-0.3,0.9-1,0.9-1.6v-3.6c0-0.6-0.4-1.3-0.9-1.6l-3.1-1.8c-0.5-0.3-1.3-0.3-1.8,0L11.8,14.6z"></path>
+          <path fill="#EFD644" d="M31.3,13.1c0-0.6,0.4-0.8,0.9-0.5l8.4,4.9c0.5,0.3,0.5,0.8,0,1l-8.4,4.9c-0.5,0.3-0.9,0.1-0.9-0.5V13.1z"></path>
+        </g>
+      </defs>
+    </svg>
+    <div id="loading">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 36" class="loader">
+        <use xlink:href="#logo-svg"></use>
+      </svg>
+    </div>
+    <nav class="navbar navbar-fixed-top ciclope-navigation text-semibold transp">
+      <div class="container"><a href="#main-slider" class="main-logo"><img src="assets/img/logo.png" srcset="assets/img/logo2x.png 2x" alt="Ciclope App Logo"></a><span class="main-version">Hackspace v.15</span>
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="#entorno">Entorno</a></li>
+          <li role="presentation"><a href="#repositorio">Repositorio</a></li>
+          <li role="presentation"><a href="#aliaods">Aliados</a></li>
+          <li role="presentation" class="social">
+              <a href="https://facebook.com/hackspaceperu">
+                <div class="hex hex-xs hex-white">
+                <div class="hex-content"><i class="pe-so-facebook"></i></div>
+                </div>
+              </a>
+          </li>
+          <li role="presentation" class="social">
+              <a href="https://twitter.com/hackspaceperu">
+                <div class="hex hex-xs hex-white">
+                <div class="hex-content"><i class="pe-so-twitter"></i></div>
+                </div>
+              </a>
+          </li>
+          <li role="presentation" class="social">
+              <a href="https://pe.linkedin.com/company/hack-space">
+                <div class="hex hex-xs hex-white">
+                <div class="hex-content"><i class="pe-so-linkedin"></i></div>
+                </div>
+              </a>
+          </li>
+        </ul>
+        <button type="button" role="button" class="mobile-btn"><span class="lines"> </span></button>
+      </div>
+    </nav>
+    <div id="main-slider" class="pe-slider">
+      <ul class="pe-slides">
+        <li class="slide-2">
+        <img src="assets/img/slide_bg_3.jpg" class="full-slide">
+        <img src="assets/img/hackspace.png" class="slider_elem slider_iphone-1">
+          <h3 class="slider_elem slider_text h-bold color-white text-center">Hack Space</h3>
+          <p class="slider_elem slider_text h-regular color-white text-center">Un recorrido a través de nuestro entorno</p>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.4 51.3" class="slider_elem slider_arrow">
+            <use xlink:href="#svg-arrow"></use>
+          </svg>
+        </li>
+      </ul>
+      <ul class="pe-slider-nav">
+        <li><a href="#0" class="pe-slider-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+              <use xlink:href="#slider-arrow"></use>
+            </svg></a></li>
+        <li><a href="#0" class="pe-slider-next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+              <use xlink:href="#slider-arrow"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+    <section id="entorno" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+            <h1 class="h-heavy">Hackspace, ♥ environment</h1>
+            <h2 class="h-semibold">Un espacio en el que compartimos, <br>aprendemos, jugamos y hacemos</h2>
+            <p class="mt3"> Esto es el HackSpace. Un espacio de formación, de aprendizaje y de compartir con otros jóvenes que tienen los mismos anhelos por hacer cosas con tecnología, que quieren perderle el miedo, dejar el “no puedo hacerlo” y empezar a investigar juntos y a hacer realidad lo que se propongan.</p>
+           <!-- <figure class="iphone-s1"><img src="assets/img/iphone-1-1.png"></figure>-->
+            <h2 class="h-semibold mt-50">¡Estamos expandiéndonos por todo el Perú!</h2>
+            <p class="mt3">Participa en el HackSpace más cercano a ti.</p>
+            <ul class="ubicacion mt-30 mb-20">
+              <li> <a href="uni">Lima - UNI <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="pucp">Lima - PUCP <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="chiclayo">Chiclayo <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="arequipa">Arequipa <i class="pe-is-e-target-2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-dark pt-110 pb0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <h3 style="color:#efd645" class="subtitle h-bold mb3"><i class="pe-is-e-hand-pointer"></i>Participa</h3>
+            <p>Personas curiosas y dispuestas a aprender más. Conocerás a gente como tú, apasionados por aprender y hacer en comunidad. Y podrás participar en un entorno correcto para desarrollar proyectos de valor y hacer realidad tus ideas.</p>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <h3 style="color:#efd645" class="subtitle h-bold mb3"><i class="pe-is-e-edit"></i>Colabora</h3>
+            <p>Personas que conciban el hacer como una forma de vida y una extensión de lo que son, y no como un trabajo. Personas que quieran compartir lo que saben, así como lo que van aprendiendo. </p>
+          </div>
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="h-bold mt-100 mb3">Buscamos el empoderamiento tecnológico</h1>
+            <p> En el camino, generamos dinámicas de aprendizaje y desarrollo. Tenemos amanecidas semanales en espacios que promueven la formación práctica y el desarrollo rápido de ideas.</p>
+            <!--<figure class="iphones-s2"><img src="assets/img/iphones-2-1.png"></figure>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="h-heavy">Creatividad para el mundo</h1>
+            <div class="row">
+              <div class="col-md-3 col-sm-6 mt-90">
+                  <a href="#0" class="ciclope-feature">
+                  <div class="hex hex-lg">
+                    <div class="hex-content"><i class="pe-is-e-target-2"></i></div>
+                  </div>
+                  <h5 class="h-black text-uppercase mt2">Desarrollo<br>Creación</h5>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6 mt-90">
+                  <a href="#0" class="ciclope-feature">
+                  <div class="hex hex-lg">
+                    <div class="hex-content"><i class="pe-is-e-binoculars"></i></div>
+                  </div>
+                  <h5 class="h-black text-uppercase mt2">Investigación<br>Búsqueda</h5>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6 mt-90">
+                  <a href="#0" class="ciclope-feature">
+                  <div class="hex hex-lg">
+                    <div class="hex-content"><i class="pe-is-e-key-1"></i></div>
+                  </div>
+                  <h5 class="h-black text-uppercase mt2">
+                     
+                    Soluciones<br>Recursos
+                  </h5>
+                  </a>
+              </div>
+              <div class="col-md-3 col-sm-6 mt-90">
+                  <a href="#0" class="ciclope-feature">
+                  <div class="hex hex-lg">
+                    <div class="hex-content"><i class="pe-is-e-tools"></i></div>
+                  </div>
+                  <h5 class="h-black text-uppercase mt2">
+                     
+                    Estructura<br>Diseño
+                  </h5>
+                  </a>
+              </div>
+            </div>
+            <hr class="mt-80">
+            <h1 class="h-heavy mt-80">Esta es nuestra más grande inspiración</h1>
+            <p class="mt3"> Crear para bien y mejorar nuestro entorno son partes fundamentales no sólo de la evolución del hombre sino del mundo y el entorno en el que vivimos. Es así que ocurre un cambio enorme en nuestra mentalidad y en nuestra vida una vez que nos damos cuenta de que realmente somos capaces de influir y hasta de cambiar directamente el mundo que nos rodea. Esta es la razón de la importancia del empoderamiento tecnológico, pues cuando aprendemos a utilizar tecnología es cuando nuestra misión como persona toma un mayor sentido de responsabilidad con nuestro mundo y sociedad.</p>
+            <div class="row iphone-features-cont">
+              <div class="col-lg-3 col-md-4 col-sm-4">
+                <div class="iphone-details left text-right">
+                  <h4 class="h-bold">Desarrolla</h4>
+                  <p>Deja el floro de lado y ponte a desarrollar.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-4">
+                <figure class="iphone-s3"><img src="assets/img/iphone-3-1.png"></figure>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-4">
+                <div class="iphone-details right text-left">
+                  <h4 class="h-bold">Crea</h4>
+                  <p>Explora nuevas tecnologías y empieza a crear.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="repositorio" data-bg-src="assets/img/bg-4-1.jpg" class="section section-dark section-background pt-45 pb-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center">
+            <h3 class="color-light-grey h-bold">Navegamos en todas las tecnologías</h3>
+            <p class="color-light-grey mt2"> Se pueden hacer equipos, trabajar de manera individual, buscar mentoría para hacer proyectos que, en su mayoría, son pequeños y que sirven para formar y consolidar en los participantes habilidades de autoaprendizaje y de confianza para que realmente puedan hacer lo que se propongan, para que le pierdan el miedo a hacer con tecnología o no pierdan la costumbre.</p>
+            <div class="mt3 mb3"><a class="btn btn-lg btn-circle mr-25"><i class="pe-so-apple"></i></a><a class="btn btn-lg btn-circle mr-25"><i class="pe-so-android"></i></a><a class="btn btn-lg btn-circle"><i class="pe-so-windows"></i></a></div>
+          </div>
+        </div>
+        <hr class="mt-20 mb-30">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h3 class="color-light-grey h-bold">Más creación, más desarrollo</h3>
+            <p class="color-light-grey mt2">Tenemos muchos proyectos desarrollados por los mentores, residentes, developers, makers y personas que frecuentan nuestro entorno. Todos estos son adjuntados a nuestra repositorio para que estén disponibles a la comunidad</p>
+            <a href="https://github.com/HackSpacePeru"> <button class="btn btn-lg mt3">Ver Repositorios<i class="pe-is-e-eye-2"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="screenshots" class="section pb-20">
+      <div class="container">
+        <!-- Modal-->
+        <div class="row mt-80">
+          <div class="col-md-12 text-center px4">
+            <h1 class="h-light mb3">Escríbenos.</h1>
+            <p>Estamos en la búsqueda constante de llevar la mejor experiencia en entornos hacia todo latinoamérica, si estás interesado en Hack Space, no dudes en escribirnos a contacto@hackspace.pe, o déjanos tu correo en el siguiente formulario</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 px4 mt1">
+            <div class="input-group form-red mt-20 mb-100">
+              <input type="text" placeholder="Ingresa tu dirección de email" class="form-control"><span class="input-group-btn">
+                <button type="buttton" class="btn btn-default">Notificarme</button></span>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+    <section id="aliados" class="section section-dark pb-110 pt-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="h-bold">HackSpace <br> aprende | crea | desarrolla</h1>
+            <hr class="mt-40 mb-40">
+            <h3 class="h-semibold color-white-2">Nuestros Aliados</h3>
+            <p class="small color-white-2">Buscamos a los mejores aliados para poder agilizar la expansión de nuestro entorno en todo latam</p>
+            <ul class="download-brands mt-50 mb-50">
+              <li> <a href="http://start-up.pe/">Startup Perú <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="http://fablabuni.edu.pe/">Red FabLab <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="https://bongous.com/">Bongo.US <i class="pe-is-e-target-2"></i></a></li>
+              <li> <a href="https://crealo.com/">Crealo <i class="pe-is-e-target-2"></i></a></li>
+            </ul>
+            <p class="small color-grey footer-copy">&copy;2015 Hackspace, Todos los derechos registrados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init();
+      
+    </script>
+    <!-- Livereload Script -- remove on production-->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="assets/libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/libs/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="assets/js/pe-slider.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="assets/js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+      
+        // Init Background
+        addBg('.section-background'); 
+      
+        // Pe Slider
+        peSlider.init({
+          slider:'#main-slider'
+        });
+      
+        peSlider.init({
+          slider:'#screenshot-slider',
+          navigation:false,
+          auto: true,
+          delay: 5000,
+          hoverPause: true
+        });
+      
+        // Pe Nav Scroll
+        peNavScroll.init({
+          nav:'.nav',
+          duration: 500,
+          offset:-58,
+          allLinks:true,
+          easingFunction: easing.easeInOutCubic
+        });
+        
+      
+        // Mobile Navigation
+        $('.mobile-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.nav').toggleClass('open');
+        })
+      
+      
+      }) // Ready
+      
+      $(window).load(function(){
+        // Scroll Changes
+        peScrollChange.init({
+          elem: '.navbar',
+          trigger: document.querySelector('#main-slider').offsetHeight,
+          classesToChange: 'transp',
+          removeClass: true
+        });
+        peScrollChange.init({
+          elem: '.iphone-s1',
+          trigger: '#features',
+          classesToChange: 'show',
+          offset: 340,
+          endPoint: document.querySelector('#features').offsetHeight
+        });
+        peScrollChange.init({
+          elem: '.iphone-s3',
+          trigger: '.iphone-features-cont',
+          classesToChange: 'show'
+        });
+        peScrollChange.init({
+          elem: '.iphone-s6',
+          trigger: '#quote',
+          classesToChange: 'show'
+        });
+      })
+          
+    </script>
+  </body>
+</html>
